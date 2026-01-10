@@ -1,1 +1,39 @@
+{
+  "name": "Default Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-python.black-formatter",
+        "ms-python.isort",
+        "njpwerner.autodocstring",
+        "magicstack.magicpython",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "littlefoxteam.vscode-python-test-adapter",
 
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "openai.codex"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+        },
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.testing.pytestEnabled": true,
+        "python.testing.unittestEnabled": false,
+        "python.testing.nosetestsEnabled": false,
+        "python.testing.autoTestDiscoverOnSaveEnabled": true,
+        "git.autofetch": true
+      }
+    }
+  }
+}
